@@ -1,0 +1,41 @@
+/* Default font style for the entire app */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #555;
+}
+
+/* Paragraphs and general text */
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Links */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

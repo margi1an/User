@@ -1,0 +1,143 @@
+/* Reset default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    padding: 1rem;
+}
+
+.register-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.register-card:hover {
+    transform: scale(1.05);
+}
+
+.register-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group .icon {
+    margin-right: 0.75rem;
+    color: #888;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.input-group input:focus {
+    background-color: #f9f9f9;
+}
+
+.submit-button {
+    background: #6e45e2;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background: #5431a3;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.navigate {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.navigate span {
+    margin: 0 0.5rem;
+}
+
+.navigate .spa a {
+    color: #6e45e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigate .spa a:hover {
+    text-decoration: underline;
+}
+
+/* Loader animation */
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.loader::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-top: 4px solid #6e45e2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
